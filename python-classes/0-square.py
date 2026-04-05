@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 class Square:
     pass
 if _name_ == "_main_":
