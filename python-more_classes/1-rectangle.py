@@ -8,7 +8,7 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """Initialize rectangle with optional width and height."""
         self.width = width   # Calls setter for validation
-        self.height = height # Calls setter for validation
+        self.height = height   # Calls setter for validation
 
     @property
     def width(self):
