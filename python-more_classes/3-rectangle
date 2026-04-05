@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define a Rectangle class with width, height, area, and perimeter."""
+"""Define a Rectangle class with width, height, area, perimeter, and printing."""
 
 
 class Rectangle:
@@ -8,7 +8,7 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """Initialize rectangle with optional width and height."""
         self.width = width    # Calls setter for validation
-        self.height = height   # Calls setter for validation
+        self.height = height  # Calls setter for validation
 
     @property
     def width(self):
@@ -47,3 +47,14 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        """Return a string of the rectangle using '#'."""
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        lines = ["#" * self.__width for _ in range(self.__height)]
+        return "\n".join(lines)
+
+    def __repr__(self):
+        """Return the formal string representation of the rectangle."""
+        return "<{} object at {}>".format(self.__class__.__name__, hex(id(self)))
