@@ -12,7 +12,7 @@ class Square:
         self.size = size         # Validates size
         self.position = position  # Validates position
 
-    @property
+        @property
     def size(self):
         """Retrieve the current size of the square."""
         return self.__size
@@ -45,7 +45,7 @@ class Square:
         return self.__size * self.__size
 
     def my_print(self):
-        """Print the square with the '#' character in stdout, respecting position."""
+        """Print the square with th character in stdout, respecting position"""
         if self.__size == 0:
             print()
             return
