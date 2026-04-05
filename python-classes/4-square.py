@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module defines a Square class with a private size attribute, 
+"""This module defines a Square class with a private size attribute,
 getter/setter, and area calculation.
 """
 
@@ -8,7 +8,7 @@ class Square:
     """A class that defines a square with a private size attribute."""
 
     def __init__(self, size=0):
-        """Initialize the square with a size, using the setter for validation"""
+        """Initialize th square with a size, using the setter for validation"""
         self.size = size  # Call setter for validation
 
     @property
