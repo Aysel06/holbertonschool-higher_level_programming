@@ -11,9 +11,7 @@ class Square:
         """Initialize the square with size and position."""
         self.size = size         # Validates size
         self.position = position  # Validates position
-        
-        
-        
+
     @property
     def size(self):
         """Retrieve the current size of the square."""
@@ -37,8 +35,8 @@ class Square:
     def position(self, value):
         """Set the position with type and value validation."""
         if (not isinstance(value, tuple) or len(value) != 2 or
-            not all(isinstance(num, int) for num in value) or
-            not all(num >= 0 for num in value)):
+             not all(isinstance(num, int) for num in value) or
+             not all(num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
