@@ -11,7 +11,9 @@ class Square:
         """Initialize the square with size and position."""
         self.size = size         # Validates size
         self.position = position  # Validates position
-
+        
+        
+        
     @property
     def size(self):
         """Retrieve the current size of the square."""
