@@ -54,7 +54,3 @@ class Rectangle:
             return ""
         lines = ["#" * self.__width for _ in range(self.__height)]
         return "\n".join(lines)
-
-    def __repr__(self):
-        """Return the formal string representation of the rectangle."""
-        return "<{} object at {}>".format(self.__class__.__name__, hex(id(self)))
